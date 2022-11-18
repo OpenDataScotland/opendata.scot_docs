@@ -12,6 +12,4 @@ jobs:
         with:
           python-version: 3.x
       - run: pip install mkdocs 
-      - run: |
-            cd config
-            mkdocs gh-deploy -b main
+      - run: mkdocs gh-deploy -b main
