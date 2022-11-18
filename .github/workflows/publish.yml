@@ -12,4 +12,4 @@ jobs:
         with:
           python-version: 3.x
       - run: pip install mkdocs 
-      - run: mkdocs gh-deploy -b gh-pages
+      - run: mkdocs gh-deploy -b gh-pages --force
