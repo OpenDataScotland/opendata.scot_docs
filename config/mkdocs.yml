@@ -3,7 +3,7 @@
 site_name: Open Data Scotland Docs
 site_url: https://docs.opendata.scot
 repo_url: https://github.com/OpenDataScotland/opendata.scot_docs
-docs_dir: ..\
+docs_dir: ../
 
 # Metadata
 site_description: #TODO
