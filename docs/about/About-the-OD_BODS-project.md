@@ -26,7 +26,8 @@ See the [Project Monthly Plan](https://github.com/OpenDataScotland/the_od_bods/w
 
 
 # Tools & Tech
-[[images/datapipeline.png]]
+![](/images/datapipeline.png)
+
 ### Scraper
 * Python
 * C#

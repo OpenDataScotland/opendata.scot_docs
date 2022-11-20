@@ -1,16 +1,21 @@
+---
+title: "Sub-project: category assignment"
+---
 
-# Related github issues
+# Sub-project: category assignment
+
+## Related github issues
 https://github.com/OpenDataScotland/the_od_bods/issues/35  Create table of expected data categories for each council
 https://github.com/OpenDataScotland/the_od_bods/issues/25  Tidy up inconsistent dataset tags
 https://github.com/OpenDataScotland/the_od_bods/issues/45  create collection of keywords relevant to categories
 https://github.com/OpenDataScotland/the_od_bods/issues/36  Automate table of expected data categories for each council
 
-# Related Slack threads:
+## Related Slack threads:
 https://opendatascotland.slack.com/archives/C02HEHDL8AY/p1649706946076149  (Frida de Sigley)
 https://opendatascotland.slack.com/archives/C02HEHDL8AY/p1648653154748209 (Jens Rasmussen)
 https://opendatascotland.slack.com/archives/C02HEHDL8AY/p1646175429897549 (Ash McClenaghan)
 
-# Other related links:
+## Other related links:
 https://www.nature.com/articles/s42256-020-00287-7.pdf An open source machine learning framework for efficient and transparent systematic reviews
 
 

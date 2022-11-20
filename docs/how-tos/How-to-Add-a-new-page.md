@@ -1,3 +1,9 @@
+---
+title: "How to: add a new page"
+---
+
+# How to: add a new page
+
 In the jkan repo:
 1. Adding the html file:
 - Add a .html at root jkan/.

@@ -1,4 +1,8 @@
-To add a new category image
+---
+title: "How to: add a new category image"
+---
+
+# How to: add a new category image
 
 1. Go to [The Noun Project](https://thenounproject.com)
 2. Search for the term for which you want to add a category (e.g. Tourism).

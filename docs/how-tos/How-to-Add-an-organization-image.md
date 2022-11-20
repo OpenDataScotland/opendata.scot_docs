@@ -1,3 +1,9 @@
+---
+title: "How to: add an organization image"
+---
+
+# How to: add an organization image
+
 Images are not held locally, but are pointed to. 
 
 Files for organisations are in the format
