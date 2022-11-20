@@ -18,12 +18,12 @@ permalink: /about/
 {% include breadcrumbs.html %}
 ```
 
-- Update the <title> and <permalink>. Add content and save
+- Update the `title` and `permalink`. Add content and save
 
 2. Adding link to navigation bar
 - go to jkan/_config.yml in root
 - find the section `#Nav bar`
-- add to structure and update <title> and <url/permalink>
+- add to structure and update `title` and `url/permalink`
 
 ```yaml
  - title: About
