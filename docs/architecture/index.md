@@ -1,9 +1,10 @@
 ---
 title: Architecture
+disable_toc: true
 ---
 
 ```mermaid
-graph TD   
+graph TD
     subgraph ArcGIS
     arcgis1[arcgis.py] --> arcgis2(/data/arcgis/*.csv)
     end
@@ -30,7 +31,7 @@ graph TD
     end
     subgraph National Library of Scotland
     nls1[nls_scraper.py] --> nls2(/data/scraped-results/output_nls.csv)
-    end    
+    end
     arcgis2 --> merge
     usmart2 --> merge
     ckan2 --> merge
@@ -46,3 +47,10 @@ graph TD
     export --> jkan1(/_datasets/*.md)
     jkan1 --> jkan2[JKAN]
 ```
+
+<script>
+    var container = document.querySelectorAll(".container")[1];
+    
+    container.classList.remove("container");
+    container.classList.add("container-fluid");
+</script>

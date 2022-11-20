@@ -5,6 +5,11 @@ site_url: https://docs.opendata.scot
 repo_url: https://github.com/OpenDataScotland/opendata.scot_docs
 edit_uri: blob/main/docs/
 
+theme:
+  name: null
+  custom_dir: 'cinder'
+
+
 # Metadata
 site_description: #TODO
 site_author: #TODO
