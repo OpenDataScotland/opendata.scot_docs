@@ -22,4 +22,4 @@ It will gather fresh data from API calls and web scrapers, process them, then wr
     - wait for confirmation message "main.sh complete"
     - whole action can take ~15 minutes to complete
 
-4. To see changes in frontend see [How to: Run frontend locally](about/how-to-run-frontend-locally.md)
+4. To see changes in frontend see [How to: Run frontend locally](../how-to-run-frontend-locally.md)

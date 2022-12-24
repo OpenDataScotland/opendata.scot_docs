@@ -16,4 +16,4 @@ All dataset categories have keywords which are used to assign categories to data
     ```
 5. Check results in `the_od_bods/data/merged_output.csv`
 
-If there are issues executing locally, check [How to: run backend locally](about/how-to-run-backend-locally.md)
+If there are issues executing locally, check [How to: run backend locally](../how-to-run-backend-locally.md)
