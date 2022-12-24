@@ -11,9 +11,9 @@ All dataset categories have keywords which are used to assign categories to data
     - These keywords/phrases should be unambigous and near-distinct to the category. There may be some overlap between categories but we discourage it
 3. Save the .json file
 4. In terminal, in `/the_od_bods`, run
-```
-python merge_data.py
-```
+    ```
+    python merge_data.py
+    ```
 5. Check results in `the_od_bods/data/merged_output.csv`
 
-If there are issues executing locally, check [How to: run backend locally](/How-to-run-backend-locally.md)
+If there are issues executing locally, check [How to: run backend locally](about/how-to-run-backend-locally.md)

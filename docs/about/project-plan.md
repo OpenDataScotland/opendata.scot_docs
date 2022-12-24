@@ -1,4 +1,4 @@
-# Project Plan
+# Project plan
 
 ## 2023
 
