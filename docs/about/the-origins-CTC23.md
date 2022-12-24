@@ -1,6 +1,6 @@
-# the_od_bods
+# The origins: CTC23
 
-We've now published [a blog post](https://codethecity.org/2021/06/13/3689/) about this project. 
+We've published [a blog post](https://codethecity.org/2021/06/13/3689/) about this project. 
 
 The aim of this project at [CTC23](https://github.com/CodeTheCity/CTC23) is to start collate access to Open Data in Scotland, beginning with cities. 
 

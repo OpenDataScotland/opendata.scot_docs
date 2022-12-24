@@ -5,21 +5,14 @@
 
 </style>
 
-Welcome to the documentation for Open Data Scotland!
+Welcome to the documentation for [opendata.scot](https://opendata.scot/)!
 
-Read about the project
+- Read about the project, its history, what it's trying to do, what it's achieved, and where it's headed in the [About](/about) section
 
-- [About the OD_BODS project](https://github.com/OpenDataScotland/the_od_bods/wiki/About-the-OD_BODS-project)
-- [Project Monthly Plan](https://github.com/OpenDataScotland/the_od_bods/wiki/Project-Monthly-Plan)
-- [Project Updates](https://github.com/OpenDataScotland/the_od_bods/wiki/Project-Updates)
-- [CTC23: The origins of the OD_BODS-project](https://github.com/OpenDataScotland/the_od_bods/wiki/CTC23:-The-origins-of-the-OD_BODS-project)
 
-Inspired? Join us!
+- Use the [Architecture](/architecture) section to understand how the project is laid out, what all the various parts are, and how it is all connected.
 
-- [Contribute to the project](https://github.com/OpenDataScotland/the_od_bods/wiki/Contribute-to-the-project)
 
-"How to" guides
+- Browse the [Contribute](/contribute) section for step-by-step guides on how to run the project locally and other repeating tasks we keep forgetting.
 
-- [How to: Add a new page](https://github.com/OpenDataScotland/the_od_bods/wiki/How-to:-Add-a-new-page)
-- [How to: Add an organization image](https://github.com/OpenDataScotland/the_od_bods/wiki/How-to:-Add-an-organization-image)
-- [How to: Add a category image](https://github.com/OpenDataScotland/the_od_bods/wiki/How-to:-Add-a-category-image)
+If you have any questions, feedback or general comments, definitely [contact the team](about/contact.md)
