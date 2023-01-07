@@ -17,3 +17,7 @@ All dataset categories have keywords which are used to assign categories to data
 5. Check results in `the_od_bods/data/merged_output.csv`
 
 If there are issues executing locally, check [How to: run backend locally](../how-to-run-backend-locally.md)
+
+
+Read more: 
+- [Karen @ Medium: Categorisation in Open Data Scotland](https://medium.com/@kar.jewell/categorisation-in-ods-cdfe95b108b2)
