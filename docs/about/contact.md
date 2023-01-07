@@ -13,8 +13,8 @@ If you prefer email, the maintainers can be reached at [admin@opendata.scot](mai
 We like to share what we're doing and learning, and can be available to talk/present at events. Read and watch what some of the team have shared before:
 
 - Ian Watt: [twitter @watty62](https://twitter.com/watty62) and [Blog](http://watty62.co.uk/category/open_data/)
-- Jack Gilmore: [twitter @YesImJack](https://twitter.com/YesImJack)
-- Karen Jewell: [twitter @kardotjewell](https://twitter.com/kardotjewell) and [Medium](https://medium.com/@kar.jewell)
+- Jack Gilmore: [twitter @YesImJack](https://twitter.com/YesImJack) and [Blog](https://jack.gilmore.scot/)
+- Karen Jewell: [twitter @kardotjewell](https://twitter.com/kardotjewell) and [Blog](https://medium.com/@kar.jewell)
 
 ### Videos
 [CTC27 - Team Open Data Scotland - Final Presentation](https://www.youtube.com/watch?v=BFhb0jLyN18)
