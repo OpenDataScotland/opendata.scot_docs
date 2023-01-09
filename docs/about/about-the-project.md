@@ -39,4 +39,4 @@ See the [2023 Project Board](https://github.com/orgs/OpenDataScotland/projects/3
 - 2022 Nov--- Shortlisted at the [OpenUK awards in 3 categories](https://medium.com/@kar.jewell/open-data-scotland-at-the-openuk-awards-2022-c89164fc4e23) for Software, Young Person and Individual. A massive congratulations to Jack Gilmore for winning the [Young Person's category](https://www.linkedin.com/posts/gilmorejc_openukaward-activity-7004046432227704833-kLib?utm_source=share&utm_medium=member_desktop)!
 - to date --- We'll be working in-between and in concentrated efforts at CTC civic hacking events where we welcome everyone to join us if they can spare 2-12 hours of work over a weekend. Everyone and all skills welcome - there is plenty to share and learn!
 
-For a more techical history (something like release notes) see our [Project Log](../project-log.md)
+For a more techical history (something like release notes) see our [Project Log](../project-log)
