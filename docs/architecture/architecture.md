@@ -32,6 +32,9 @@ graph TD
     subgraph National Library of Scotland
     nls1[nls_scraper.py] --> nls2(/data/scraped-results/output_nls.csv)
     end
+    subgraph Scottish Qualifications Authority
+    sqa1[sqa_scraper.py] --> sqa2(/data/scraped-results/output_sqa.csv)
+    end
     arcgis2 --> merge
     usmart2 --> merge
     ckan2 --> merge
@@ -41,6 +44,7 @@ graph TD
     ea2 --> merge
     moray2 --> merge
     nls2 --> merge
+    sqa2 --> merge
     merge[merge_data.py] --Cleaning and recategorization--> merge1(/data/merged_output.csv)
     merge --> merge2(/data/merged_output_untidy.csv)
     merge1 --> export[export2jkan.py]
