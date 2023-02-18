@@ -14,7 +14,7 @@ All dataset categories have keywords which are used to assign categories to data
     ```
     python merge_data.py
     ```
-5. Check results in `the_od_bods/data/merged_output.csv`
+5. Check results in `the_od_bods/data/merged_output.json`
 
 If there are issues executing locally, check [How to: run backend locally](../how-to-run-backend-locally.md)
 

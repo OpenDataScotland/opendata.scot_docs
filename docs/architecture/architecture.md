@@ -45,7 +45,7 @@ graph TD
     moray2 --> merge
     nls2 --> merge
     sqa2 --> merge
-    merge[merge_data.py] --Cleaning and recategorization--> merge1(/data/merged_output.csv)
+    merge[merge_data.py] --Cleaning and recategorization--> merge1(/data/merged_output.json)
     merge --> merge2(/data/merged_output_untidy.csv)
     merge1 --> export[export2jkan.py]
     export --> jkan1(/_datasets/*.md)
