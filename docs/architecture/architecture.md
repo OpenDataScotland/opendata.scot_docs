@@ -4,7 +4,7 @@ disable_toc: true
 ---
 
 ```mermaid
-graph TD
+graph LR
     subgraph ArcGIS
     arcgis1[arcgis.py] --> arcgis2(/data/arcgis/*.csv)
     end
