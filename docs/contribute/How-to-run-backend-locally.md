@@ -17,9 +17,9 @@ It will gather fresh data from API calls and web scrapers, process them, then wr
     - python packages needed are specified in `the_od_bods/requirements.txt`
     - you may use any environment manager of your choice: conda, venv, poetry or other.
 
-3. Run `main.sh`
-    - in terminal, in `the_od_bods`, execute the shell script `sh main.sh`
-    - wait for confirmation message "main.sh complete"
+3. Run `main.py`
+    - in terminal, in `the_od_bods`, execute the shell script `python main.py`
+    - wait for confirmation message "Scraping complete"
     - whole action can take ~15 minutes to complete
 
 4. To see changes in frontend see [How to: Run frontend locally](../how-to-run-frontend-locally.md)
