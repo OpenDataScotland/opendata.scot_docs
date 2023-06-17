@@ -26,4 +26,4 @@ The first time `docker compose up` is run it will take a few minutes to setup th
 
 If the docker container needs to be rebuilt in case of cacheing issues, run `docker compose down` followed by `docker compose up` to start it again.
 
-Sometimes there may be an error on `docker compose up` [see this solution](https://stackoverflow.com/questions/33996523/error-installing-nokogiri-failed-to-build-gem-native-extension-libiconv-is-mi)
+Sometimes there may be an error on `docker compose up` [see this solution](https://stackoverflow.com/questions/33996523/error-installing-nokogiri-failed-to-build-gem-native-extension-libiconv-is-mi). On linux, you may encounter a permission error writing to `/srv/jekyll` [see this solution](https://stackoverflow.com/questions/61800095/docker-permissions-problem-with-jekyll-image-in-wsl) 
