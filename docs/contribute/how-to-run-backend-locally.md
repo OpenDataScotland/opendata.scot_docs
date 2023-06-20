@@ -69,7 +69,7 @@ To get started, you should have the following installed:
                 </ol>
             </li>
             <li>
-                To see changes in frontend see <a href="../How-to-run-frontend-locally">How to: Run frontend locally</a>
+                To see changes in frontend see <a href="../how-to-run-frontend-locally">How to: Run frontend locally</a>
             </li>
         </ol>
     </li>
