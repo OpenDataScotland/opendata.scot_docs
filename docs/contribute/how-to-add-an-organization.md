@@ -30,6 +30,6 @@ wdtk_id: aberdeen_city_council
 
 3. Save file, commit and push to `gh-pages` branch 
 
-4. To add an image or logo for the organisation see [How to: add an organization image](../how-to-add-an-organization-image.md)
+4. To add an image or logo for the organisation see [How to: add an organization image](../how-to-add-an-organization-image)
 
 
