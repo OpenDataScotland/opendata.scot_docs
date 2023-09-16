@@ -40,8 +40,11 @@ graph LR
     merge[merge_data.py] --Cleaning and recategorization--> merge1(/data/merged_output.json)
     merge --> merge2(/data/merged_output_untidy.csv)
     merge1 --> export[export2jkan.py]
-    export --> jkan1(/_datasets/*.md)
+    subgraph JKAN
+    jkan1(/_datasets/*.md)
     jkan1 --> jkan2[JKAN]
+    end
+    export --> jkan1
 ```
 
 <script>
