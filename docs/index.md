@@ -12,9 +12,9 @@ This page is intended to point you to the information that matters most to you, 
 
 ## Analyst
 - See the opendata.scot dataset listing in [json format](https://opendata.scot/datasets.json)
-- Discover stories about visitor behaviour on opendata.scot by looking at our [site analytics data output](https://github.com/OpenDataScotland/opendata.scot_analytics) or in [browser version](https://opendata.scot/about/siteanalytics/)
-- Browse inspiring examples of [other projects using open data](https://opendata.scot/resources/) both in Scotland and abroad
-- Reference guides for [working with Scottish open data](https://opendata.scot/resources/)
+- Discover stories about visitor behaviour on opendata.scot by looking at our [site analytics data output](https://github.com/OpenDataScotland/opendata.scot_analytics) or in [browser version](https://opendata.scot/siteanalytics/)
+- Browse inspiring examples of [other projects using open data](https://opendata.scot/odprojects/) both in Scotland and abroad
+- Reference guides for [working with Scottish open data](https://opendata.scot/ukod/)
 - As an analyst, you might not need to store to any of the repos, but have a look at what stories have made it to the [website](https://opendata.scot/analytics/), and the ideas which [haven't quite made it there yet](https://github.com/OpenDataScotland/the_od_bods/tree/main/analytics). Any shared analytics code can be stored in repo [the_od_bods/analytics](https://github.com/OpenDataScotland/the_od_bods/tree/main/analytics)
 - Analysts will be most interested in tickets related to [analytics](https://github.com/orgs/OpenDataScotland/projects/3/views/1?filterQuery=label%3Aanalytics+)
 
