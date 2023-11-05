@@ -9,7 +9,9 @@ Never used git/github before? More help at the bottom of this page.
     - Find the issue you're working on OR create a new one.
 
 2. Create branch from issue:
-    - In issue webpage, on right-hand bar of issue, scroll to the _Development_ section and click _Create a branch_.
+    - (Skip this step if you have already forked the repo youare working on) In the repo's issue webpage, on the top navigation bar, click the _Code_ navigation item and click the _Fork_ button in the top right
+    - Check that you are happy with the repository name and optionally make sure that "Copy the `main`` branch only" is checked. Then click _Create fork_.
+    - Create a new branch by clicking on the _main_ dropdown in the top left below the repository name and type the name of your new branch into the text box (we suggest naming your branches `issue_no-issue name` e.g. `123-aberdeen-scraper`). Then click the _Create branch: ... from main_ entry that appears in the branch list.
     - Fetch and checkout to new branch
 
 3. Make changes in branch  
