@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    
+    <link rel="canonical" href="https://docs.opendata.scot/architecture/repositories/">
+    <link rel="shortcut icon" href="../../img/favicon.ico">
+
+    
+    <title>Repositories - Open Data Scotland Docs</title>
+    
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.0/css/all.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.0/css/v4-shims.css">
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/hack-font@3.3.0/build/web/hack.min.css">
+    <link href='//rsms.me/inter/inter.css' rel='stylesheet' type='text/css'>
+    <link href='//fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,700italic,400,300,600,700&subset=latin-ext,latin' rel='stylesheet' type='text/css'>
+    <link href="../../css/bootstrap-custom.min.css" rel="stylesheet">
+    <link href="../../css/base.min.css" rel="stylesheet">
+    <link href="../../css/cinder.min.css" rel="stylesheet">
+
+    
+        
+        <link rel="stylesheet" href="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.18.0/build/styles/github.min.css">
+        
+    
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+            <script src="https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script>
+            <script src="https://cdn.jsdelivr.net/npm/respond.js@1.4.2/dest/respond.min.js"></script>
+        <![endif]-->
+
+    
+
+    <script defer data-domain="docs.opendata.scot" src="https://plausible.io/js/script.js"></script>
+
+     
+</head>
+
+<body>
+
+    <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <div class="container">
+
+        <!-- Collapsed navigation -->
+        <div class="navbar-header">
+            <!-- Expander button -->
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            
+
+            <!-- Main title -->
+
+            
+              <a class="navbar-brand" href="../..">Open Data Scotland Docs</a>
+            
+        </div>
+
+        <!-- Expanded navigation -->
+        <div class="navbar-collapse collapse">
+                <!-- Main navigation -->
+                <ul class="nav navbar-nav">
+                
+                
+                    <li >
+                        <a href="../..">Home</a>
+                    </li>
+                
+                
+                
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">About <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                        
+                            
+<li >
+    <a href="../../about/about-the-project/">About the project</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../about/contact/">Contact</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../about/project-log/">Project log</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../about/project-plan/">Project plan</a>
+</li>
+
+                        
+                        </ul>
+                    </li>
+                
+                
+                
+                    <li class="dropdown active">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Architecture <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                        
+                            
+<li >
+    <a href="../architecture/">Architecture</a>
+</li>
+
+                        
+                            
+<li class="active">
+    <a href="./">Repositories</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../tools-and-tech/">Tools &amp; Tech</a>
+</li>
+
+                        
+                        </ul>
+                    </li>
+                
+                
+                
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Contribute <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                        
+                            
+<li >
+    <a href="../../contribute/contribution-guide/">Contribution Guide</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../contribute/how-to-add-a-category-image/">How to: add a new category image</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../contribute/how-to-add-a-new-page/">How to: add a new page</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../contribute/how-to-add-an-organization-image/">How to: add an organization image</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../contribute/how-to-add-an-organization/">How to: add an organization</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../contribute/how-to-modify-category-keywords/">How to: modify category keywords </a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../contribute/how-to-run-backend-locally/">How to: run backend locally</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../contribute/how-to-run-frontend-locally/">How to: run frontend locally</a>
+</li>
+
+                        
+                        </ul>
+                    </li>
+                
+                
+                
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Sub projects <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                        
+                            
+<li >
+    <a href="../../sub-projects/Sub-Project-Category-Assignment/">Sub-project: category assignment</a>
+</li>
+
+                        
+                        </ul>
+                    </li>
+                
+                
+                </ul>
+
+            <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a href="#" data-toggle="modal" data-target="#mkdocs_search_modal">
+                            <i class="fas fa-search"></i> Search
+                        </a>
+                    </li>
+                    <li >
+                        <a rel="prev" href="../architecture/">
+                            <i class="fas fa-arrow-left"></i> Previous
+                        </a>
+                    </li>
+                    <li >
+                        <a rel="next" href="../tools-and-tech/">
+                            Next <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://github.com/OpenDataScotland/opendata.scot_docs/blob/main/docs/architecture/repositories.md"><i class="fab fa-github"></i> Edit on GitHub</a>
+                    </li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+    <div class="container">
+        
+        
+        <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
+    <ul class="nav bs-sidenav">
+        <li class="first-level active"><a href="#repositories">Repositories</a></li>
+            <li class="second-level"><a href="#opendatascot_docs">opendata.scot_docs</a></li>
+                
+            <li class="second-level"><a href="#the_od_bods">the_od_bods</a></li>
+                
+            <li class="second-level"><a href="#jkan">jkan</a></li>
+                
+            <li class="second-level"><a href="#opendatascot_pipeline">opendata.scot_pipeline</a></li>
+                
+            <li class="second-level"><a href="#opendatascot_analytics">opendata.scot_analytics</a></li>
+                
+    </ul>
+</div></div>
+        <div class="col-md-9" role="main">
+
+<h1 id="repositories">Repositories</h1>
+<p>Looking to learn more about what repositories we have? Check out the information below!</p>
+<h3 id="opendatascot_docs"><a href="https://github.com/OpenDataScotland/opendata.scot_docs">opendata.scot_docs</a></h3>
+<p>Read our docs at <a href="https://docs.opendata.scot/">https://docs.opendata.scot/</a> including background on the project and how to navigate and contribute to the project.</p>
+<h3 id="the_od_bods"><a href="https://github.com/OpenDataScotland/the_od_bods">the_od_bods</a></h3>
+<p>The original repository that was set up off the back of this project starting at <a href="https://codethecity.org/2021/06/13/3689/">Code The City 23</a> where we collated open datasets across local authorities in Scotland.</p>
+<p>We now use this as our main repository for scripting toolsets we use to gather data for our website <a href="https://opendata.scot">opendata.scot</a></p>
+<h3 id="jkan"><a href="https://github.com/OpenDataScotland/jkan">jkan</a></h3>
+<p>A lightweight, backend-free open data portal, powered by Jekyll and originally created by <a href="https://github.com/timwis">timwis</a>. This repository holds the source code we use to generate the static site pages for <a href="https://opendata.scot">opendata.scot</a>.</p>
+<h3 id="opendatascot_pipeline"><a href="https://github.com/OpenDataScotland/opendata.scot_pipeline">opendata.scot_pipeline</a></h3>
+<p>This repository holds the GitHub Actions workflow for automatically running our data scraping scripts on a regular basis to update the datasets shown on <a href="https://opendata.scot/datasets">opendata.scot/datasets</a></p>
+<h3 id="opendatascot_analytics"><a href="https://github.com/OpenDataScotland/opendata.scot_analytics">opendata.scot_analytics</a></h3>
+<p>This repository holds the GitHub Actions workflow for the daily dump of our <a href="http://plausible.io/opendata.scot">Plausible</a> website analytics data.</p></div>
+        
+        
+    </div>
+
+    
+      <footer class="col-md-12 text-center">
+          
+          
+            <hr>
+            <p>
+            <small>All original content
+<a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a>
+<a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><img alt="Creative Commons Licence" style="border-width:0" src="https://i.creativecommons.org/l/by-sa/4.0/88x31.png"></a>
+</small><br>
+            
+            <small>Documentation built with <a href="http://www.mkdocs.org/">MkDocs</a>.</small>
+            </p>
+          
+
+          
+          
+      </footer>
+    
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="../../js/bootstrap-3.0.3.min.js"></script>
+
+    
+    <script src="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.18.0/build/highlight.min.js"></script>
+        
+    <script>hljs.initHighlightingOnLoad();</script>
+    
+
+    <script>var base_url = "../.."</script>
+    
+    <script src="../../js/base.js"></script>
+    <script src="../../search/main.js"></script>
+
+    <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">
+                    <span aria-hidden="true">&times;</span>
+                    <span class="sr-only">Close</span>
+                </button>
+                <h4 class="modal-title" id="searchModalLabel">Search</h4>
+            </div>
+            <div class="modal-body">
+                <p>
+                    From here you can search these documents. Enter
+                    your search terms below.
+                </p>
+                <form>
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="keyboardModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="keyboardModalLabel">Keyboard Shortcuts</h4>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+    </body>
+
+</html>
