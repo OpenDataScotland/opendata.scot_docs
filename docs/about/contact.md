@@ -2,8 +2,9 @@
 
 For latest news and details about future build events, our main channels are:
 
-- Twitter [@opendata_sco](https://twitter.com/opendata_sco)
-- [Slack: Open Data Scotland](https://join.slack.com/t/opendatascotland/shared_invite/zt-yfcc64tg-xIF1cOxkWbKZqI8ZBPzkGg) #ods-website
+- on Mastodon [@opendatascotland@mastodon.scot](https://mstdn.social/@opendatascotland@mastodon.scot)
+- on [LinkedIn](https://www.linkedin.com/company/opendatascotland)
+- on [Slack: Open Data Scotland](https://join.slack.com/t/opendatascotland/shared_invite/zt-yfcc64tg-xIF1cOxkWbKZqI8ZBPzkGg) #ods-website
 
 We're always happy for new collaborators to join us - no technical experience required, just interest
 
