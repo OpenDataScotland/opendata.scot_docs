@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    
+    <link rel="canonical" href="https://docs.opendata.scot/contribute/how-to-run-backend-locally/">
+    <link rel="shortcut icon" href="../../img/favicon.ico">
+
+    
+    <title>How to: run backend locally - Open Data Scotland Docs</title>
+    
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.0/css/all.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.0/css/v4-shims.css">
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/hack-font@3.3.0/build/web/hack.min.css">
+    <link href='//rsms.me/inter/inter.css' rel='stylesheet' type='text/css'>
+    <link href='//fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,700italic,400,300,600,700&subset=latin-ext,latin' rel='stylesheet' type='text/css'>
+    <link href="../../css/bootstrap-custom.min.css" rel="stylesheet">
+    <link href="../../css/base.min.css" rel="stylesheet">
+    <link href="../../css/cinder.min.css" rel="stylesheet">
+
+    
+        
+        <link rel="stylesheet" href="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.18.0/build/styles/github.min.css">
+        
+    
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+            <script src="https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script>
+            <script src="https://cdn.jsdelivr.net/npm/respond.js@1.4.2/dest/respond.min.js"></script>
+        <![endif]-->
+
+    
+
+    <script defer data-domain="docs.opendata.scot" src="https://plausible.io/js/script.js"></script>
+
+     
+</head>
+
+<body>
+
+    <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <div class="container">
+
+        <!-- Collapsed navigation -->
+        <div class="navbar-header">
+            <!-- Expander button -->
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            
+
+            <!-- Main title -->
+
+            
+              <a class="navbar-brand" href="../..">Open Data Scotland Docs</a>
+            
+        </div>
+
+        <!-- Expanded navigation -->
+        <div class="navbar-collapse collapse">
+                <!-- Main navigation -->
+                <ul class="nav navbar-nav">
+                
+                
+                    <li >
+                        <a href="../..">Home</a>
+                    </li>
+                
+                
+                
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">About <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                        
+                            
+<li >
+    <a href="../../about/about-the-project/">About the project</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../about/contact/">Contact</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../about/project-log/">Project log</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../about/project-plan/">Project plan</a>
+</li>
+
+                        
+                        </ul>
+                    </li>
+                
+                
+                
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Architecture <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                        
+                            
+<li >
+    <a href="../../architecture/architecture/">Architecture</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../architecture/repositories/">Repositories</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../architecture/tools-and-tech/">Tools &amp; Tech</a>
+</li>
+
+                        
+                        </ul>
+                    </li>
+                
+                
+                
+                    <li class="dropdown active">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Contribute <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                        
+                            
+<li >
+    <a href="../contribution-guide/">Contribution Guide</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../how-to-add-a-category-image/">How to: add a new category image</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../how-to-add-a-new-page/">How to: add a new page</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../how-to-add-an-organization-image/">How to: add an organization image</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../how-to-add-an-organization/">How to: add an organization</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../how-to-modify-category-keywords/">How to: modify category keywords </a>
+</li>
+
+                        
+                            
+<li class="active">
+    <a href="./">How to: run backend locally</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../how-to-run-frontend-locally/">How to: run frontend locally</a>
+</li>
+
+                        
+                        </ul>
+                    </li>
+                
+                
+                
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Sub projects <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                        
+                            
+<li >
+    <a href="../../sub-projects/Sub-Project-Category-Assignment/">Sub-project: category assignment</a>
+</li>
+
+                        
+                        </ul>
+                    </li>
+                
+                
+                </ul>
+
+            <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a href="#" data-toggle="modal" data-target="#mkdocs_search_modal">
+                            <i class="fas fa-search"></i> Search
+                        </a>
+                    </li>
+                    <li >
+                        <a rel="prev" href="../how-to-modify-category-keywords/">
+                            <i class="fas fa-arrow-left"></i> Previous
+                        </a>
+                    </li>
+                    <li >
+                        <a rel="next" href="../how-to-run-frontend-locally/">
+                            Next <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://github.com/OpenDataScotland/opendata.scot_docs/blob/main/docs/contribute/how-to-run-backend-locally.md"><i class="fab fa-github"></i> Edit on GitHub</a>
+                    </li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+    <div class="container">
+        
+        
+        <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
+    <ul class="nav bs-sidenav">
+        <li class="first-level active"><a href="#how-to-run-backend-locally">How to: run backend locally</a></li>
+            <li class="second-level"><a href="#prerequisites">Prerequisites</a></li>
+                
+            <li class="second-level"><a href="#getting-started">Getting started</a></li>
+                
+    </ul>
+</div></div>
+        <div class="col-md-9" role="main">
+
+<!-- markdownlint-disable MD033 -->
+
+<h1 id="how-to-run-backend-locally">How to: run backend locally</h1>
+<p>This is if you'd like to replicate the pipeline action <code>the_od_bods</code> repo on a local machine.</p>
+<p>It will gather fresh data from API calls and web scrapers, process them, then write prepared listings to the local JKAN repo.</p>
+<h2 id="prerequisites">Prerequisites</h2>
+<p>To get started, you should have the following installed:</p>
+<ul>
+<li>Git</li>
+<li>Python 3.x</li>
+<li>Python Package Manager (Pip)</li>
+<li>Docker</li>
+</ul>
+<h2 id="getting-started">Getting started</h2>
+<ol style="list-style-type: decimal;margin-left:8px;">
+    <li>Have <code>the_od_bods</code> and <code>jkan</code> repos on local in the same directory<ol style="list-style-type: lower-alpha;">
+            <li>`git clone</code> if it&apos;s the first time, or <code>git pull</code> to update repos</li>
+            <li>you must have the <code>jkan</code> repo in local, even if you don&apos;t intend to use it, or the pipeline action will fail.</li>
+        </ol>
+    </li>
+    <li>Run pipeline<ol style="list-style-type: lower-alpha;">
+            <li>Run natively<ol style="list-style-type: lower-roman;">
+                    <li>Set up or update Python environment<ol style="list-style-type: decimal;">
+                            <li><code>the_od_bods</code> repo runs exclusively in python</li>
+                            <li>python packages needed are specified in <code>the_od_bods/requirements.txt</code></li>
+                            <li>you may use any environment manager of your choice: conda, venv, poetry or other.</li>
+                        </ol>
+                    </li>
+                    <li>Run <code>run.sh</code><ol style="list-style-type: decimal;">
+                            <li>In terminal, in <code>the_od_bods</code> execute the shell script <code>sh run.sh</code></li>
+                            <li>Wait for confirmation message &ldquo;Scraping complete&rdquo;</li>
+                            <li>Whole action can take ~15 minutes to complete</li>
+                        </ol>
+                    </li>
+                    <li>Run <code>merge_data.py</code> and <code>export2.jkan.py</code><ol style="list-style-type: decimal;">
+                            <li>In terminal, in the <code>the_ods_bods</code> execute the shell script <code>python merge_data.py</code></li>
+                            <li>In terminal, in <code>the_od_bods</code> execute the shell script <code>python export2jkan.py</code></li>
+                        </ol>
+                    </li>
+                </ol>
+            </li>
+            <li>Run using Docker<ol style="list-style-type: lower-roman;">
+                    <li>Run image build
+                        <ol>
+                            <li>In terminal, in <code>the_od_bods</code> execute the shell script <code>docker build -t open_data_scotland_pipeline .</code></li>
+                        </ol>
+                    </li>
+                    <li>Run image in container
+                        <ol>
+                            <li>In terminal, in <code>the_od_bods</code> execute the shell script <code>docker run -t --name ods_pipeline open_data_scotland_pipeline</code></li>
+                        </ol>
+                    </li>
+                    <li>Extract container contents
+                        <ol>
+                            <li>To delete previous files in the JKAN directory, in terminal, from <code>jkan</code>, execute the shell script <code>rm -r _datasets/*</code></li>
+                            <li>In terminal, in <code>jkan</code> to copy the JKAN files, execute the shell script <code>docker cp ods_pipeline:./usr/src/app/jkan/_datasets/ ./_datasets</code></li>
+                            <li>In terminal, in <code>the_od_bods</code> to copy the pipeline files, execute the shell script <code>docker cp ods_pipeline:./usr/src/app/the_od_bods/ .</code></li>
+                        </ol>
+                    </li>
+                </ol>
+            </li>
+            <li>
+                To see changes in frontend see <a href="../how-to-run-frontend-locally">How to: Run frontend locally</a>
+            </li>
+        </ol>
+    </li>
+</ol></div>
+        
+        
+    </div>
+
+    
+      <footer class="col-md-12 text-center">
+          
+          
+            <hr>
+            <p>
+            <small>All original content
+<a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a>
+<a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><img alt="Creative Commons Licence" style="border-width:0" src="https://i.creativecommons.org/l/by-sa/4.0/88x31.png"></a>
+</small><br>
+            
+            <small>Documentation built with <a href="http://www.mkdocs.org/">MkDocs</a>.</small>
+            </p>
+          
+
+          
+          
+      </footer>
+    
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="../../js/bootstrap-3.0.3.min.js"></script>
+
+    
+    <script src="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.18.0/build/highlight.min.js"></script>
+        
+    <script>hljs.initHighlightingOnLoad();</script>
+    
+
+    <script>var base_url = "../.."</script>
+    
+    <script src="../../js/base.js"></script>
+    <script src="../../search/main.js"></script>
+
+    <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">
+                    <span aria-hidden="true">&times;</span>
+                    <span class="sr-only">Close</span>
+                </button>
+                <h4 class="modal-title" id="searchModalLabel">Search</h4>
+            </div>
+            <div class="modal-body">
+                <p>
+                    From here you can search these documents. Enter
+                    your search terms below.
+                </p>
+                <form>
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="keyboardModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="keyboardModalLabel">Keyboard Shortcuts</h4>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+    </body>
+
+</html>

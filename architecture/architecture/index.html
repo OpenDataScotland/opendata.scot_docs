@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="IE=edge" http-equiv="X-UA-Compatible"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="https://docs.opendata.scot/architecture/architecture/" rel="canonical"/>
+<link href="../../img/favicon.ico" rel="shortcut icon"/>
+<title>Architecture - Open Data Scotland Docs</title>
+<link href="https://use.fontawesome.com/releases/v5.12.0/css/all.css" rel="stylesheet"/>
+<link href="https://use.fontawesome.com/releases/v5.12.0/css/v4-shims.css" rel="stylesheet"/>
+<link href="//cdn.jsdelivr.net/npm/hack-font@3.3.0/build/web/hack.min.css" rel="stylesheet"/>
+<link href="//rsms.me/inter/inter.css" rel="stylesheet" type="text/css"/>
+<link href="//fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,700italic,400,300,600,700&amp;subset=latin-ext,latin" rel="stylesheet" type="text/css"/>
+<link href="../../css/bootstrap-custom.min.css" rel="stylesheet"/>
+<link href="../../css/base.min.css" rel="stylesheet"/>
+<link href="../../css/cinder.min.css" rel="stylesheet"/>
+<link href="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.18.0/build/styles/github.min.css" rel="stylesheet"/>
+<!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!--[if lt IE 9]>
+            <script src="https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script>
+            <script src="https://cdn.jsdelivr.net/npm/respond.js@1.4.2/dest/respond.min.js"></script>
+        <![endif]-->
+<script data-domain="docs.opendata.scot" defer="" src="https://plausible.io/js/script.js"></script>
+</head>
+<body>
+<div class="navbar navbar-default navbar-fixed-top" role="navigation">
+<div class="container">
+<!-- Collapsed navigation -->
+<div class="navbar-header">
+<!-- Expander button -->
+<button class="navbar-toggle" data-target=".navbar-collapse" data-toggle="collapse" type="button">
+<span class="sr-only">Toggle navigation</span>
+<span class="icon-bar"></span>
+<span class="icon-bar"></span>
+<span class="icon-bar"></span>
+</button>
+<!-- Main title -->
+<a class="navbar-brand" href="../..">Open Data Scotland Docs</a>
+</div>
+<!-- Expanded navigation -->
+<div class="navbar-collapse collapse">
+<!-- Main navigation -->
+<ul class="nav navbar-nav">
+<li>
+<a href="../..">Home</a>
+</li>
+<li class="dropdown">
+<a class="dropdown-toggle" data-toggle="dropdown" href="#">About <b class="caret"></b></a>
+<ul class="dropdown-menu">
+<li>
+<a href="../../about/about-the-project/">About the project</a>
+</li>
+<li>
+<a href="../../about/contact/">Contact</a>
+</li>
+<li>
+<a href="../../about/project-log/">Project log</a>
+</li>
+<li>
+<a href="../../about/project-plan/">Project plan</a>
+</li>
+</ul>
+</li>
+<li class="dropdown active">
+<a class="dropdown-toggle" data-toggle="dropdown" href="#">Architecture <b class="caret"></b></a>
+<ul class="dropdown-menu">
+<li class="active">
+<a href="./">Architecture</a>
+</li>
+<li>
+<a href="../repositories/">Repositories</a>
+</li>
+<li>
+<a href="../tools-and-tech/">Tools &amp; Tech</a>
+</li>
+</ul>
+</li>
+<li class="dropdown">
+<a class="dropdown-toggle" data-toggle="dropdown" href="#">Contribute <b class="caret"></b></a>
+<ul class="dropdown-menu">
+<li>
+<a href="../../contribute/contribution-guide/">Contribution Guide</a>
+</li>
+<li>
+<a href="../../contribute/how-to-add-a-category-image/">How to: add a new category image</a>
+</li>
+<li>
+<a href="../../contribute/how-to-add-a-new-page/">How to: add a new page</a>
+</li>
+<li>
+<a href="../../contribute/how-to-add-an-organization-image/">How to: add an organization image</a>
+</li>
+<li>
+<a href="../../contribute/how-to-add-an-organization/">How to: add an organization</a>
+</li>
+<li>
+<a href="../../contribute/how-to-modify-category-keywords/">How to: modify category keywords </a>
+</li>
+<li>
+<a href="../../contribute/how-to-run-backend-locally/">How to: run backend locally</a>
+</li>
+<li>
+<a href="../../contribute/how-to-run-frontend-locally/">How to: run frontend locally</a>
+</li>
+</ul>
+</li>
+<li class="dropdown">
+<a class="dropdown-toggle" data-toggle="dropdown" href="#">Sub projects <b class="caret"></b></a>
+<ul class="dropdown-menu">
+<li>
+<a href="../../sub-projects/Sub-Project-Category-Assignment/">Sub-project: category assignment</a>
+</li>
+</ul>
+</li>
+</ul>
+<ul class="nav navbar-nav navbar-right">
+<li>
+<a data-target="#mkdocs_search_modal" data-toggle="modal" href="#">
+<i class="fas fa-search"></i> Search
+                        </a>
+</li>
+<li>
+<a href="../../about/project-plan/" rel="prev">
+<i class="fas fa-arrow-left"></i> Previous
+                        </a>
+</li>
+<li>
+<a href="../repositories/" rel="next">
+                            Next <i class="fas fa-arrow-right"></i>
+</a>
+</li>
+<li>
+<a href="https://github.com/OpenDataScotland/opendata.scot_docs/blob/main/docs/architecture/architecture.md"><i class="fab fa-github"></i> Edit on GitHub</a>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="container">
+<div class="col-md-12" role="main">
+<div class="mermaid">graph LR
+    subgraph ArcGIS
+    arcgis1[arcgis.py] --&gt; arcgis2(/data/arcgis/*.csv)
+    end
+    subgraph USMART
+    usmart1[usmart.py] --&gt; usmart2(/data/USMART/*.csv)
+    end
+    subgraph CKAN
+    ckan1[ckan.py] --&gt; ckan2(/data/ckan/*.csv)
+    end
+    subgraph DCAT
+    dcat1[dcat.py] --&gt; dcat2(/data/dcat/*.csv)
+    end
+    subgraph Web Scrapers
+    abdn1[aberdeenshire_council_scraper.py] --&gt; abdn2(/data/scraped-results/aberdeenshire.csv)
+    ea1[east_ayrshire_scraper.py] --&gt; ea2(/data/scraped-results/output_east_ayrshire.csv)
+    moray1[moray_council_scraper.py] --&gt; moray2(/data/scraped-results/output_moray.csv)
+    nls1[nls_scraper.py] --&gt; nls2(/data/scraped-results/output_nls.csv)
+    sqa1[sqa_scraper.py] --&gt; sqa2(/data/scraped-results/output_sqa.csv)
+    stats1[sparkql_statistics.py] --&gt; stats2(/data/scraped-results/scotgov-datasets-sparkql.csv)
+    sparl1[scottish_parliament.py] --&gt; sparl2(/data/bespoke_ScottishParliament/Scottish Parliament.json)
+    end
+    arcgis2 --&gt; merge
+    usmart2 --&gt; merge
+    ckan2 --&gt; merge
+    dcat2 --&gt; merge
+    abdn2 --&gt; merge
+    ea2 --&gt; merge
+    moray2 --&gt; merge
+    nls2 --&gt; merge
+    sqa2 --&gt; merge
+    stats2 --&gt; merge
+    sparl2 --&gt; merge
+    merge[merge_data.py] --Cleaning and recategorization--&gt; merge1(/data/merged_output.json)
+    merge --&gt; merge2(/data/merged_output_untidy.csv)
+    merge1 --&gt; export[export2jkan.py]
+    subgraph JKAN
+    jkan1(/_datasets/*.md)
+    jkan1 --&gt; jkan2[JKAN]
+    end
+    export --&gt; jkan1
+</div>
+<script>
+    var container = document.querySelectorAll(".container")[1];
+
+    container.classList.remove("container");
+    container.classList.add("container-fluid");
+</script></div>
+</div>
+<footer class="col-md-12 text-center">
+<hr/>
+<p>
+<small>All original content
+<a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a>
+<a href="http://creativecommons.org/licenses/by-sa/4.0/" rel="license"><img alt="Creative Commons Licence" src="https://i.creativecommons.org/l/by-sa/4.0/88x31.png" style="border-width:0"/></a>
+</small><br/>
+<small>Documentation built with <a href="http://www.mkdocs.org/">MkDocs</a>.</small>
+</p>
+</footer>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="../../js/bootstrap-3.0.3.min.js"></script>
+<script src="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.18.0/build/highlight.min.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+<script>var base_url = "../.."</script>
+<script src="../../js/base.js"></script>
+<script src="../../search/main.js"></script>
+<div aria-hidden="true" aria-labelledby="searchModalLabel" class="modal" id="mkdocs_search_modal" role="dialog" tabindex="-1">
+<div class="modal-dialog modal-lg">
+<div class="modal-content">
+<div class="modal-header">
+<button class="close" data-dismiss="modal" type="button">
+<span aria-hidden="true">×</span>
+<span class="sr-only">Close</span>
+</button>
+<h4 class="modal-title" id="searchModalLabel">Search</h4>
+</div>
+<div class="modal-body">
+<p>
+                    From here you can search these documents. Enter
+                    your search terms below.
+                </p>
+<form>
+<div class="form-group">
+<input class="form-control" id="mkdocs-search-query" placeholder="Search..." title="Type search term here" type="text"/>
+</div>
+</form>
+<div id="mkdocs-search-results"></div>
+</div>
+<div class="modal-footer">
+</div>
+</div>
+</div>
+</div><div aria-hidden="true" aria-labelledby="keyboardModalLabel" class="modal" id="mkdocs_keyboard_modal" role="dialog" tabindex="-1">
+<div class="modal-dialog">
+<div class="modal-content">
+<div class="modal-header">
+<h4 class="modal-title" id="keyboardModalLabel">Keyboard Shortcuts</h4>
+<button class="close" data-dismiss="modal" type="button"><span aria-hidden="true">×</span><span class="sr-only">Close</span></button>
+</div>
+<div class="modal-body">
+<table class="table">
+<thead>
+<tr>
+<th style="width: 20%;">Keys</th>
+<th>Action</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="help shortcut"><kbd>?</kbd></td>
+<td>Open this help</td>
+</tr>
+<tr>
+<td class="next shortcut"><kbd>n</kbd></td>
+<td>Next page</td>
+</tr>
+<tr>
+<td class="prev shortcut"><kbd>p</kbd></td>
+<td>Previous page</td>
+</tr>
+<tr>
+<td class="search shortcut"><kbd>s</kbd></td>
+<td>Search</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="modal-footer">
+</div>
+</div>
+</div>
+</div>
+<script type="module">import mermaid from "https://unpkg.com/mermaid@10.4.0/dist/mermaid.esm.min.mjs";
+mermaid.initialize({});</script></body>
+</html>
